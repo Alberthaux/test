@@ -7,9 +7,13 @@ from market.forms import EmailSend
 from market.util import get_gallery
 from market.mail import send_message
 
+@app.route("/")
+def home():
+    return render_template('home.html')
+
 @app.route("/<page>")
-def home(page):
-    return render_template('home.html',
+def gallery(page):
+    return render_template('gallery.html',
                            page=page,
                            dir_list=get_gallery(page))
 
