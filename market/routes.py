@@ -6,12 +6,31 @@ from market.mail import send_message
 
 
 @app.route("/")
+def home0():
+    return render_template('home.html')
+
+
+@app.route("/home")
 def home():
     return render_template('home.html')
 
 
-@app.route("/<page>")
-def gallery(page):
+@app.route("/lifedrawing")
+def gallery(page='lifedrawing'):
+    return render_template('gallery.html',
+                           page=page,
+                           dir_list=get_gallery(page))
+
+
+@app.route("/sls")
+def sls(page='sls'):
+    return render_template('gallery.html',
+                           page=page,
+                           dir_list=get_gallery(page))
+
+
+@app.route("/mediterranee")
+def mediterranee(page='mediterranee'):
     return render_template('gallery.html',
                            page=page,
                            dir_list=get_gallery(page))
