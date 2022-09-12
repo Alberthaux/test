@@ -1,8 +1,8 @@
-from market import app
+from rucoh import app
 from flask import render_template
-from market.forms import EmailSend
-from market.util import get_gallery
-from market.mail import send_message
+from rucoh.forms import EmailSend
+from rucoh.util import get_gallery
+from rucoh.mail import send_message
 
 
 @app.route("/")
