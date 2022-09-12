@@ -1,15 +1,14 @@
 from market import app
-from flask import render_template, \
-    request
-import smtplib
-import glob
+from flask import render_template
 from market.forms import EmailSend
 from market.util import get_gallery
 from market.mail import send_message
 
+
 @app.route("/")
 def home():
     return render_template('home.html')
+
 
 @app.route("/<page>")
 def gallery(page):
