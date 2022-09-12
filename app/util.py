@@ -7,5 +7,5 @@ def get_gallery(page):
         f'../static/photos/{page}/' + d.split('/')[-1]
         for d in dir_list
     ]
-    print(page, f'/static/photos/{page}/*')
+    dir_list.sort()
     return dir_list
