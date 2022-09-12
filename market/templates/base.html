@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% block head %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/">
+    <link href="../static/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/main.css" rel="stylesheet">
+
+    <title>
+        {% block title %}{% endblock %}
+
+    </title>
+    {% endblock %}
+</head>
+<main class="d-flex flex-nowrap">
+    <body>
+    <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;position:fixed;">
+        <a class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+            <span class="fs-5 fw-semibold">Ruben Cohen</span>
+        </a>
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="/home" class="link-dark d-inline-flex text-decoration-none rounded">Maison</a></li>
+            <li><a href="/mediterranee" class="link-dark d-inline-flex text-decoration-none rounded">Méditerranée</a>
+            </li>
+            <li><a href="/lifedrawing" class="link-dark d-inline-flex text-decoration-none rounded">Life Drawing</a>
+            </li>
+            <li><a href="/sls" class="link-dark d-inline-flex text-decoration-none rounded">S.L.S</a></li>
+            <li><a href="/contact" class="link-dark d-inline-flex text-decoration-none rounded">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Your page content -->
+    <div class="right">
+
+        {% block content %}{% endblock %}
+    </div>
+</main>
+
+{% block scripts %}
+<!-- Optional JavaScript -->
+{{ bootstrap.load_js() }}
+{% endblock %}
+</body>
+</html>
