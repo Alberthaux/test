@@ -1,0 +1,22 @@
+body {
+font-family: Andale Mono;
+line-height:25px;
+margin-bottom:25px;
+
+}
+
+.right{
+ position:absolute;
+  left:300px;}
+
+.photos{
+  horizontal-align:middle;
+
+}
+img {
+    horizontal-align:center;
+    margin-top:10px;
+  margin-bottom:10px;
+  object-fit:cover;
+
+}
