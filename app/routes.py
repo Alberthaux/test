@@ -1,8 +1,8 @@
-from rucoh import app
+from app import app
 from flask import render_template
-from rucoh.forms import EmailSend
-from rucoh.util import get_gallery
-from rucoh.mail import send_message
+from app.forms import EmailSend
+from app.util import get_gallery
+from app.mail import send_message
 
 
 @app.route("/")

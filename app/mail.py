@@ -1,4 +1,4 @@
-from rucoh import app
+from app import app
 from flask_mail import Mail, Message
 
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
