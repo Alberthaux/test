@@ -1,3 +1,6 @@
+:root{
+--webkit-tap-highlight-color: transparent;
+}
 body {
 font-family: 'Chakra Petch', sans-serif;
 line-height:25px;
@@ -65,10 +68,13 @@ img {
   padding: 10px 15px;
   border: none;
   font-color:#ffffff;
+
 }
 
 .openbtn:hover {
   background-color: #444;
+  cursor: pointer;
+   font-color:#ffffff;
 }
 
 #main {
@@ -78,11 +84,10 @@ img {
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-width: 400px) {
-  .sidebar {padding-top: 15px;}
+  .sidebar {padding-top: 60px;}
   .sidebar a {font-size: 18px;}
   img {
      width:"200";
    height:"200";
   }
 }
--webkit-tap-highlight-color: transparent;
