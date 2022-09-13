@@ -19,16 +19,20 @@
 
     </title>
     {% endblock %}
+    <style>
+   @media screen and (max-width: 400px) {
+          .sidebar {padding-top: 60px;}
+          .sidebar a {font-size: 0.1em;}
+          img {
+             width:"200px";
+             height:"200px";}}
+    </style>
 </head>
 <main class="d-flex flex-nowrap">
     <body>
 
-
-
-
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-white" >
     <button class="openbtn" onclick="openNav()">Ruben Cohen</button>
-
 
     </nav>
  <div id="main">
@@ -46,9 +50,8 @@
             <li><a href="/lifedrawing" class="link-dark d-inline-flex text-decoration-none rounded">Life Drawing</a>
             </li>
             <li><a href="/sls" class="link-dark d-inline-flex text-decoration-none rounded">S.L.S</a></li>
+            <li><a href="/contact" class="link-dark d-inline-flex text-decoration-none rounded">Contact</a></li>
 
-           <!-- <li><a href="/contact" class="link-dark d-inline-flex text-decoration-none rounded">Contact</a></li>
-        --!>
         </ul>
     </div>
 </main>

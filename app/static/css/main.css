@@ -81,13 +81,3 @@ img {
   transition: margin-left .5s;
   padding: 16px;
 }
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-width: 400px) {
-  .sidebar {padding-top: 60px;}
-  .sidebar a {font-size: 18px;}
-  img {
-     width:"200";
-   height:"200";
-  }
-}

@@ -1,9 +1,11 @@
 {% extends 'base.html' %}
 {% block title %}{{page}}{% endblock %}
 {% block content %}
-<div class="photos">
+
+<div id="lifedrawing" class="photos">
 {% for path in dir_list %}
-<img src="../{{ path }}",  width="400", height="400">
+<img src="../{{ path }}",  width="400px", height="400px">
 {% endfor %}
 </div>
+
 {% endblock %}

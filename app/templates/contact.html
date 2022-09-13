@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block title %}Contact Me{% endblock %}
 {% block content %}
-
+<div class="home">
 <p class="display-6">My Name is Ruben Cohen</p>
 <div class="container">
 <form action="/contact" method="POST" class="form-register">
@@ -9,6 +9,7 @@
 {{ render_form(form, button_style='link') }}
 
 </form>
+    </div>
     </div>
 {% endblock %}
 
