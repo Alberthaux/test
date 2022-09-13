@@ -2,31 +2,28 @@ body {
 font-family: 'Chakra Petch', sans-serif;
 line-height:25px;
 margin-bottom:25px;
-font-size:1.6em;
+font-size:1.6em;}
 
-}
 .left{
 max-width: 200px;
-  margin: auto;}
+margin: auto;}
 
-.right{
- position:absolute;
-
-  left:200px;}
 
 .photos{
   horizontal-align:middle;
-  padding-top: 3g0px;
+  padding-top: 45px;}
 
-}
+ .home{
+  horizontal-align:middle;
+  padding-top: 45px;}
+
 img {
     horizontal-align:center;
     margin-top:20px;
-  margin-bottom:20px;
-  object-fit:cover;
-}
-
-
+    margin-bottom:20px;
+    object-fit:cover;
+    width:400px;
+    height:400px;}
 
 .sidebar {
   height: 100%;
@@ -80,7 +77,12 @@ img {
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 400px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
+  img {
+     width:"200";
+   height:"200";
+  }
 }
+-webkit-tap-highlight-color: transparent;
