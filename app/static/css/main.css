@@ -1,14 +1,18 @@
 body {
-font-family: 'Brush Script MT', cursive;
+font-family: 'Tangerine', cursive;
 line-height:25px;
 margin-bottom:25px;
-fin-size:2em;
+font-size:1.6em;
 
 }
+.left{
+max-width: 200px;
+  margin: auto;}
 
 .right{
  position:absolute;
-  left:300px;}
+
+  left:200px;}
 
 .photos{
   horizontal-align:middle;
@@ -16,8 +20,7 @@ fin-size:2em;
 }
 img {
     horizontal-align:center;
-    margin-top:10px;
-  margin-bottom:10px;
+    margin-top:20px;
+  margin-bottom:20px;
   object-fit:cover;
-
 }
