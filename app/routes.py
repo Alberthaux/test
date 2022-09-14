@@ -1,5 +1,5 @@
 from app import app
-from flask import render_template
+from flask import render_template, url_for, redirect
 from app.forms import EmailSend
 from app.util import get_gallery
 from app.mail import send_message
@@ -7,7 +7,7 @@ from app.mail import send_message
 
 @app.route("/")
 def home0():
-    return render_template('home.html')
+    return redirect(url_for('gallery'))
 
 
 @app.route("/home")
@@ -29,8 +29,8 @@ def sls(page='sls'):
                            dir_list=get_gallery(page))
 
 
-@app.route("/mediterranee")
-def mediterranee(page='mediterranee'):
+@app.route("/3d")
+def mediterranee(page='3d'):
     return render_template('gallery.html',
                            page=page,
                            dir_list=get_gallery(page))
