@@ -1,9 +1,22 @@
 {% extends 'base.html' %}
 {% block title %}{{page}}{% endblock %}
 {% block content %}
-
-{% for path in dir_list %}
-<img src="../{{ path }}",  width="400px", height="400px">
-{% endfor %}
-
-{% endblock %}
+{% for p, d in paragraphs.items() %}
+<div class="cd-section">
+    {% set contents = d['content'] %}
+    {% set t = d['title_'] %}
+    <h2> {{d.title_}} </h2>
+</div>
+{% for n, content in contents.items()%}
+<div class="cd-section">
+    {% if content['type']=='image' %}
+    <img src="{{content['file_path']}}">
+    {%elif content['type']=='video'%}
+    <iframe title="vimeo-player" src="{{content['url']}}"
+            width="640" height="400" frameborder="0" allowfullscreen>
+    </iframe>
+    {% endif %}
+</div>
+    {% endfor %}
+    {% endfor %}
+    {% endblock %}

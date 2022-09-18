@@ -3,6 +3,15 @@ from flask import render_template, url_for, redirect
 from app.forms import EmailSend
 from app.util import get_gallery
 from app.mail import send_message
+import yaml
+
+
+with open('app/static/galleries.yaml', "r") as stream:
+    try:
+        config = yaml.safe_load(stream)
+
+    except yaml.YAMLError as exc:
+        print(exc)
 
 
 @app.route("/")
@@ -17,9 +26,11 @@ def home():
 
 @app.route("/lifedrawing")
 def gallery(page='lifedrawing'):
+    paragraphs = config.get(page, [])
+
     return render_template('gallery.html',
                            page=page,
-                           dir_list=get_gallery(page))
+                           paragraphs=paragraphs)
 
 
 @app.route("/sls")
@@ -31,10 +42,9 @@ def sls(page='sls'):
 
 @app.route("/3d")
 def mediterranee(page='3d'):
+    paragraphs = config.get(page, [])
     return render_template('gallery.html',
-                           page=page,
-                           dir_list=get_gallery(page))
-
+                           paragraphs=paragraphs)
 
 @app.route("/contact", methods=['GET', 'POST'])
 def contactform():

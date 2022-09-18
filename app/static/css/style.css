@@ -1,0 +1,155 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+body {
+ font-family: 'IBM Plex Sans', sans-serif;
+  color: #000000;
+  background-color: #FFFFFF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 16px;
+}
+/* -------------------------------- 
+
+Main Components 
+
+-------------------------------- */
+.cd-section {
+  height: 100vh;
+}
+.cd-section h2 {
+  line-height: 100vh;
+  text-align: center;
+  text-size-adjust: 60%;}
+
+.cd-section iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+    }
+
+.cd-section img {
+  display: block;
+  margin: auto;  /* Magic! */
+  width: 30%;
+  transition: transform 0.8s;
+  transform: translateY(+40%);
+}
+
+.cd-section form {
+  display: block;
+  margin: auto;  /* Magic! */
+  width: 30%;
+  transform: translateY(+40%);
+}
+
+.cd-section img:hover {
+ transform: scale(1.2) translateY(+30%) ;
+}
+
+@media only screen and (min-width: 1050px) {
+  .cd-section h2 {
+    font-size: 4rem;
+    font-weight: 300;
+  }
+
+@media only screen and (min-width: 1050px) {
+  .cd-section:first-of-type > div::before {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1050px) {
+  .cd-section > div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Force Hardware Acceleration */
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+.cd-vertical-nav {
+  /* lateral navigation */
+  position: fixed;
+  z-index: 1;
+  right: 3%;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: none;
+}
+
+
+.left{
+max-width: 200px;
+margin: auto;}
+
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 100;
+  left: 0;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 160px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #CCCCFF;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  font-color:#ffffff;}
+
+.openbtn:hover {
+  background-color: #444;
+  cursor: pointer;
+   font-color:#ffffff;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+.scroll-parent {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.scroll-parent > div {
+    scroll-snap-align: start;
+}

@@ -1,0 +1,62 @@
+3d:
+  fourmilius:
+    title_: 'Fourmilius and his Struggles'
+    content:
+      photo1:
+        type: "image"
+        file_path: "../static/photos/3d/1.jpeg"
+      photo2:
+        type: "image"
+        file_path: "../static/photos/3d/2.jpeg"
+  space_child:
+    title_: "You'll Never Guess Where the Space Child Clicks at Night"
+    content:
+      photo1:
+        type: "image"
+        file_path: "../static/photos/3d/7.jpeg"
+      photo2:
+        type: "image"
+        file_path: "../static/photos/3d/10.jpeg"
+  palm_trees:
+    title_: "The Soothing Effects of the Deep Neural Trees"
+    content:
+      photo1:
+        type: "image"
+        file_path: "../static/photos/3d/4.jpeg"
+      photo2:
+        type: "image"
+        file_path: "../static/photos/3d/5.jpeg"
+  theatre:
+    title_: "In the Depth of my Soul Lies 4 Cubes and a Tiny Ball"
+    content:
+      video1:
+        type: "video"
+        url: "https://player.vimeo.com/video/146496850?h=3821d76377"
+lifedrawing:
+  main:
+    title_: "Life Drawings"
+    content:
+      photo0:
+        type: "image"
+        file_path: "../static/photos/lifedrawing/0.png"
+      photo1:
+        type: "image"
+        file_path: "../static/photos/lifedrawing/1.png"
+      photo2:
+        type: "image"
+        file_path: "../static/photos/lifedrawing/2.png"
+      photo3:
+        type: "image"
+        file_path: "../static/photos/lifedrawing/3.png"
+      photo4:
+        type: "image"
+        file_path: "../static/photos/lifedrawing/4.png"
+      photo5:
+        type: "image"
+        file_path: "../static/photos/lifedrawing/5.png"
+      photo6:
+        type: "image"
+        file_path: "../static/photos/lifedrawing/6.png"
+      photo7:
+        type: "image"
+        file_path: "../static/photos/lifedrawing/7.png"
